@@ -1,0 +1,217 @@
+html {
+    background-color: bisque;
+    font-family: "Book Antiqua";
+    font-size: 1.5vw;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#btnsDiv {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: rgb(95, 60, 31);
+    font-size: 1.2vw;
+    width: 100%;
+}
+
+#mainBtn {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8vw;
+    margin: auto 0 auto 2vw;
+}
+
+#littleBtnsDiv {
+    margin-left: auto;
+    padding-right: 1vw;
+}
+
+.btnA {
+    display: inline-block;
+    position: relative;
+    margin: 2vw 1vw 2vw 1vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: bisque;
+}
+
+.btnA:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    transform: scaleX(0);
+    height: .2vw;
+    bottom: 0;
+    left: 0;
+    background-color: bisque;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.btnA:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 2vw auto 3.5vw auto;
+}
+
+h1 {
+    font-size: 2.2vw;
+    text-align: center;
+    margin-bottom: 2.5vw;
+}
+
+h3 {
+    font-size: 1.9vw;
+    text-align: center;
+    margin: 0 auto 1vw auto;
+}
+
+h4 {
+    margin-bottom: 0;
+    font-size: 1.7vw;
+}
+
+p {
+    text-align: justify;
+    margin-top: 0;
+}
+
+.li1 {
+    margin-top: 0;
+    list-style: circle;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+}
+
+.ytVideo {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tableTitle {
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border: .1vw solid black;
+}
+
+td {
+    font-size: 1.3vw;
+    border: .1vw solid black;
+}
+
+img {
+    margin: 1vw auto 1.5vw auto;
+    max-width: 100%;
+}
+
+.bigMapResponsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.bigMapResponsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#map {
+    width: 17vw;
+    margin: auto;
+    font-size: 1.1vw;
+}
+
+.mapResponsive {
+    overflow: hidden;
+    position: relative;
+    height: 9.5vw;
+    border-radius: 1vw;
+    margin: 0;
+}
+
+.mapResponsive iframe{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#footerDiv {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(95, 60, 31);
+    font-size: 1.1vw;
+    color: bisque;
+    padding: 2.2vw 0 1.8vw 0;
+    bottom: 0;
+}
+
+.footerSubDiv {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.footerSubDiv a {
+    color: bisque;
+    margin: 0 0 1vw 0;
+}
+
+.footerTitle {
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+.footerSubTitle {
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin: 1vw 0 0 0;
+}
